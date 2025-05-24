@@ -1,36 +1,59 @@
 import { mainText } from "./main.js";
 
-export const dipaText = `Pertanyaan:
-  1. Bagaimana Melihat IKPA Capaian Satker?
-  2. Bagaimana Melihat Pagu Minus Belanja Realisasi?
-  3. Bagaimana Melihat Realisasi Belanja?
-  4. Bagaimana Melihat Data Kontrak?
+export const dipaText = `
+📊 *Menu DIPA - Pertanyaan Umum*
 
-  9. Kembali`;
+Silakan pilih pertanyaan yang ingin Anda ketahui jawabannya:
 
-const firstRes = `1. Buka Menu IKPA
-2. Pilih Sub Menu Capaian Satker
-3. Tampil Data Penilaian IKPA Satker
+1️⃣  *Bagaimana melihat IKPA Capaian Satker?*
+2️⃣  *Bagaimana melihat Pagu Minus Belanja Realisasi?*
+3️⃣  *Bagaimana melihat Realisasi Belanja?*
+4️⃣  *Bagaimana melihat Data Kontrak?*
 
-9. Kembali`;
+↩️ 9. *Kembali ke menu utama*
 
-const secondRes = `1. Buka Menu Pagu Minus
-2. Pilih Salah Satu Sub Menu Belanja
-3. Tampil Data Satker Dengan Pagu Minus
+_Ketik angka sesuai pilihan Anda, contoh: *1* untuk melihat IKPA Satker._
+`;
 
-9. Kembali`;
+export const firstRes = `
+📈 *Melihat IKPA Capaian Satker*
 
-const thirdRes = `1. Buka Menu Realisasi Belanja
-2. Pilih Sub Menu Realisasi
+1️⃣ Buka *Menu IKPA*
+2️⃣ Pilih *Sub Menu Capaian Satker*
+3️⃣ Data Penilaian IKPA Satker akan ditampilkan
 
-9. Kembali`;
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
 
-const fourthRes = `1. Buka Menu Lainnya
-2. Pilih Sub Menu Daftar Kontrak
-3. Filter Data Ingin Dilihat
-4. Tampil Data Kontrak
+export const secondRes = `
+💰 *Melihat Pagu Minus Belanja Realisasi*
 
-9. Kembali`;
+1️⃣ Buka *Menu Pagu Minus*
+2️⃣ Pilih salah satu *Sub Menu Belanja*
+3️⃣ Data Satker dengan Pagu Minus akan ditampilkan
+
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
+
+export const thirdRes = `
+📊 *Melihat Realisasi Belanja*
+
+1️⃣ Buka *Menu Realisasi Belanja*
+2️⃣ Pilih *Sub Menu Realisasi*
+
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
+
+export const fourthRes = `
+📄 *Melihat Data Kontrak*
+
+1️⃣ Buka *Menu Lainnya*
+2️⃣ Pilih *Sub Menu Daftar Kontrak*
+3️⃣ Gunakan filter untuk melihat data sesuai kebutuhan
+4️⃣ Data kontrak akan ditampilkan
+
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
 
 export async function dipaCommand(command, sock, sender, map) {
   switch (command) {

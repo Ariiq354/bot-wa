@@ -3,13 +3,20 @@ import { perwabkeuText } from "./perwabkeu.js";
 import { sdmText } from "./sdm.js";
 import { telakText } from "./telak.js";
 
-export const mainText = `Pilih Aplikasi:
-  1. Perwabkeu
-  2. Telak
-  3. SDM
-  4. DIPA
+export const mainText = `
+👋 *Selamat datang!*
 
-  /selesai: Selesai`;
+Silakan pilih aplikasi yang ingin Anda akses:
+
+1️⃣  *Perwabkeu* — Pelaporan Keuangan
+2️⃣  *Telak* — Telaah Anggaran
+3️⃣  *SDM* — Manajemen Sumber Daya Manusia
+4️⃣  *DIPA* — Dokumen Isian Pelaksanaan Anggaran
+
+🛑 Ketik */selesai* jika Anda sudah selesai memilih.
+
+_Contoh: ketik angka *1* untuk memilih Perwabkeu._
+`;
 
 export async function mainCommand(command, sock, sender, map) {
   switch (command) {
@@ -32,7 +39,7 @@ export async function mainCommand(command, sock, sender, map) {
     case "/selesai":
       map.set(sender, "idle");
       await sock.sendMessage(sender, {
-        text: "Terima kasih telah memakai bot kami!",
+        text: "🙏 *Terima kasih telah menggunakan bot kami!*",
       });
       break;
     default:

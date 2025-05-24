@@ -1,21 +1,36 @@
 import { mainText } from "./main.js";
 
-export const sdmText = `Pertanyaan:
-  1. Bagaimana Memasukkan Data Anggota?
-  2. Bagaimana Membentuk Susunan Organisasi dan Tata Kerja?
+export const sdmText = `
+👥 *Menu SDM - Pertanyaan Umum*
 
-  9. Kembali`;
+Silakan pilih pertanyaan yang ingin Anda ketahui jawabannya:
 
-const firstRes = `1. Buka Menu Anggota
-2. Klik Tombol Tambah Untuk Tambah Anggota
+1️⃣  *Bagaimana memasukkan data anggota?*
+2️⃣  *Bagaimana membentuk Susunan Organisasi dan Tata Kerja (SOTK)?*
 
-9. Kembali`;
+↩️ 9. *Kembali ke menu utama*
 
-const secondRes = `1. Buka Menu SOTK
-2. Scroll Ke Bawah
-3. Pilih Anggota Untuk Tambah Personel Ke SOTK
+_Ketik angka sesuai pilihan Anda, contoh: *1* untuk melihat cara input data anggota._
+`;
 
-9. Kembali`;
+export const firstRes = `
+🧾 *Cara Memasukkan Data Anggota*
+
+1️⃣ Buka *Menu Anggota*
+2️⃣ Klik tombol *Tambah* untuk menambahkan anggota baru
+
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
+
+export const secondRes = `
+🏛️ *Membentuk Susunan Organisasi dan Tata Kerja (SOTK)*
+
+1️⃣ Buka *Menu SOTK*
+2️⃣ Scroll ke bawah untuk melihat struktur
+3️⃣ Pilih anggota untuk menambah personel ke dalam SOTK
+
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
 
 export async function sdmCommand(command, sock, sender, map) {
   switch (command) {

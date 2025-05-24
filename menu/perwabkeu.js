@@ -1,38 +1,57 @@
 import { mainText } from "./main.js";
 
-export const perwabkeuText = `Pertanyaan:
-  1. Bagaimana Cara Upload Dokumen NHPW?
-  2. Bagaimana Ubah Data SP2D?
-  3. Jenis Perwabkeu Apa Saja?
+export const perwabkeuText = `
+📂 *Menu Perwabkeu*
 
-  9. Kembali`;
+Silakan pilih pertanyaan yang ingin Anda ketahui jawabannya:
 
-const firstRes = `1. Masuk Menu Kontrak
-2. Pilih Kontrak
-3. Pilih Nilai Termin
-4. Jika Sudah Mengisi SP2D, Maka Upload Dokumen Dengan Klik Upload
-5. Jika Belum Mengisi SP2D, Maka Isi Data SP2D
+1️⃣  *Bagaimana cara upload dokumen NHPW?*
+2️⃣  *Bagaimana cara mengubah data SP2D?*
+3️⃣  *Apa saja jenis Perwabkeu?*
 
-9. Kembali`;
+↩️ 9. *Kembali ke menu utama*
 
-const secondRes = `1. Masuk Menu Kontrak
-2. Pilih Kontrak
-3. Pilih Nilai Termin
-4. Klik Tombol Edit SP2D
-5. Kirim Pesan Untuk Bidkeu Buka Ubah Data
-6. Bidkeu Menyetujui
-7. Silakan Ubah Data
+_Ketik angka sesuai pilihan Anda, misalnya *1* untuk melihat cara upload dokumen NHPW._
+`;
 
-9. Kembali`;
+const firstRes = `
+📤 *Cara Upload Dokumen NHPW*
 
-const thirdRes = `1. Dokumen Perwabkeu Diatas 200 Juta
-2. Dokumen Perwabkeu 50 Juta Sampai 200 Juta
-3. Dokumen Perwabkeu Kurang 50 Juta
-4. Dokumen Perwabkeu Latihan Pra Operasi
-5. Dokumen Perwabkeu Listrik, Telepon, Gas
-6. Dokumen Perwabkeu Pelaksanaan Operasi
+1️⃣ Masuk ke *Menu Kontrak*
+2️⃣ Pilih *Kontrak* yang sesuai
+3️⃣ Pilih *Nilai Termin*
+4️⃣ Jika sudah mengisi SP2D, klik *Upload* untuk mengunggah dokumen
+5️⃣ Jika belum, isi dulu *Data SP2D*
 
-9. Kembali`;
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
+
+const secondRes = `
+✏️ *Cara Mengubah Data SP2D*
+
+1️⃣ Masuk ke *Menu Kontrak*
+2️⃣ Pilih *Kontrak*
+3️⃣ Pilih *Nilai Termin*
+4️⃣ Klik tombol *Edit SP2D*
+5️⃣ Kirim pesan ke *Bidkeu* untuk membuka akses edit
+6️⃣ Setelah disetujui oleh Bidkeu
+7️⃣ Anda bisa langsung mengubah data
+
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
+
+const thirdRes = `
+📑 *Jenis Dokumen Perwabkeu*
+
+1️⃣ Di atas Rp200 juta
+2️⃣ Rp50 juta – Rp200 juta
+3️⃣ Di bawah Rp50 juta
+4️⃣ Latihan Pra Operasi
+5️⃣ Listrik, Telepon, Gas
+6️⃣ Pelaksanaan Operasi
+
+↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
+`;
 
 export async function perwabkeuCommand(command, sock, sender, map) {
   switch (command) {
