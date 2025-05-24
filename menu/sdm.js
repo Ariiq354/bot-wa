@@ -7,11 +7,15 @@ export const sdmText = `Pertanyaan:
   9. Kembali`;
 
 const firstRes = `1. Buka Menu Anggota
-2. Klik Tombol Tambah Untuk Tambah Anggota`;
+2. Klik Tombol Tambah Untuk Tambah Anggota
+
+9. Kembali`;
 
 const secondRes = `1. Buka Menu SOTK
 2. Scroll Ke Bawah
-3. Pilih Anggota Untuk Tambah Personel Ke SOTK`;
+3. Pilih Anggota Untuk Tambah Personel Ke SOTK
+
+9. Kembali`;
 
 export async function sdmCommand(command, sock, sender, map) {
   switch (command) {

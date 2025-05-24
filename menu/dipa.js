@@ -10,19 +10,27 @@ export const dipaText = `Pertanyaan:
 
 const firstRes = `1. Buka Menu IKPA
 2. Pilih Sub Menu Capaian Satker
-3. Tampil Data Penilaian IKPA Satker`;
+3. Tampil Data Penilaian IKPA Satker
+
+9. Kembali`;
 
 const secondRes = `1. Buka Menu Pagu Minus
 2. Pilih Salah Satu Sub Menu Belanja
-3. Tampil Data Satker Dengan Pagu Minus`;
+3. Tampil Data Satker Dengan Pagu Minus
+
+9. Kembali`;
 
 const thirdRes = `1. Buka Menu Realisasi Belanja
-2. Pilih Sub Menu Realisasi`;
+2. Pilih Sub Menu Realisasi
+
+9. Kembali`;
 
 const fourthRes = `1. Buka Menu Lainnya
 2. Pilih Sub Menu Daftar Kontrak
 3. Filter Data Ingin Dilihat
-4. Tampil Data Kontrak`;
+4. Tampil Data Kontrak
+
+9. Kembali`;
 
 export async function dipaCommand(command, sock, sender, map) {
   switch (command) {

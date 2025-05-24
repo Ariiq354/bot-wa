@@ -8,7 +8,8 @@ export const mainText = `Pilih Aplikasi:
   2. Telak
   3. SDM
   4. DIPA
-`;
+
+  /selesai: Selesai`;
 
 export async function mainCommand(command, sock, sender, map) {
   switch (command) {
@@ -27,6 +28,12 @@ export async function mainCommand(command, sock, sender, map) {
     case "4":
       map.set(sender, "dipa");
       await sock.sendMessage(sender, { text: dipaText });
+      break;
+    case "/selesai":
+      map.set(sender, "idle");
+      await sock.sendMessage(sender, {
+        text: "Terima kasih telah memakai bot kami!",
+      });
       break;
     default:
       await sock.sendMessage(sender, { text: mainText });

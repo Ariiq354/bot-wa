@@ -48,23 +48,30 @@ async function connectToWhatsApp() {
     const args = body.trim().split(" ");
     const command = args.shift().toLowerCase();
 
-    const state = userState.get(sender) || "main";
-    switch (state) {
-      case "main":
-        await mainCommand(command, sock, sender, userState);
-        break;
-      case "perwabkeu":
-        await perwabkeuCommand(command, sock, sender, userState);
-        break;
-      case "telak":
-        await telakCommand(command, sock, sender, userState);
-        break;
-      case "sdm":
-        await sdmCommand(command, sock, sender, userState);
-        break;
-      case "dipa":
-        await dipaCommand(command, sock, sender, userState);
-        break;
+    if (command === "/mulai") {
+      userState.set(sender, "main");
+    }
+
+    const state = userState.get(sender) || "idle";
+    console.log(state, command);
+    if (state !== "idle") {
+      switch (state) {
+        case "main":
+          await mainCommand(command, sock, sender, userState);
+          break;
+        case "perwabkeu":
+          await perwabkeuCommand(command, sock, sender, userState);
+          break;
+        case "telak":
+          await telakCommand(command, sock, sender, userState);
+          break;
+        case "sdm":
+          await sdmCommand(command, sock, sender, userState);
+          break;
+        case "dipa":
+          await dipaCommand(command, sock, sender, userState);
+          break;
+      }
     }
   });
 }

@@ -11,13 +11,19 @@ const firstRes = `1. Masuk Menu Nama Kegiatan
 2. Mengisi Kegiatan
 3. Mengisi Nilai RAB
 4. Melakukan Upload Dokumen RAB
-5. Klik Simpan`;
+5. Klik Simpan
+
+9. Kembali`;
 
 const secondRes = `1. Buka Menu Laporan Status Kegiatan
-2. Klik Tombol Detail`;
+2. Klik Tombol Detail
+
+9. Kembali`;
 
 const thirdRes = `1. Dukungan Operasi POLRI
-2. Direktif Kapolri`;
+2. Direktif Kapolri
+
+9. Kembali`;
 
 export async function telakCommand(command, sock, sender, map) {
   switch (command) {
