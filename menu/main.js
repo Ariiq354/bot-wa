@@ -37,7 +37,7 @@ export async function mainCommand(command, sock, sender, map) {
       await sock.sendMessage(sender, { text: dipaText });
       break;
     case "/selesai":
-      map.set(sender, "idle");
+      map.delete(sender);
       await sock.sendMessage(sender, {
         text: "🙏 *Terima kasih telah menggunakan bot kami!*",
       });
