@@ -1,6 +1,7 @@
 import { dipaText } from "./dipa.js";
 import { perwabkeuText } from "./perwabkeu.js";
 import { sdmText } from "./sdm.js";
+import { selarasText } from "./selaras.js";
 import { telakText } from "./telak.js";
 
 export const mainText = `
@@ -8,10 +9,11 @@ export const mainText = `
 
 Silakan pilih aplikasi yang ingin Anda akses:
 
-1️⃣  *Perwabkeu* — Pelaporan Keuangan
-2️⃣  *Telak* — Telaah Anggaran
-3️⃣  *SDM* — Manajemen Sumber Daya Manusia
+1️⃣  *Perwabkeu* — Pertanggungjawab Keuangan
+2️⃣  *Telak* — Tindak Pidana Terhadap Layanan Administrasi Kepolisian
+3️⃣  *SDM* — Sumber Daya Manusia
 4️⃣  *DIPA* — Dokumen Isian Pelaksanaan Anggaran
+5️⃣  *Selaras* — Sistem Elektronik Layanan Anggaran dan Rencana Anggaran Satuan
 
 🛑 Ketik */selesai* jika Anda sudah selesai memilih.
 
@@ -35,6 +37,10 @@ export async function mainCommand(command, sock, sender, map) {
     case "4":
       map.set(sender, "dipa");
       await sock.sendMessage(sender, { text: dipaText });
+      break;
+    case "5":
+      map.set(sender, "selaras");
+      await sock.sendMessage(sender, { text: selarasText });
       break;
     case "/selesai":
       map.delete(sender);

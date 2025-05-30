@@ -5,6 +5,7 @@ import { mainCommand } from "./menu/main.js";
 import { perwabkeuCommand } from "./menu/perwabkeu.js";
 import { sdmCommand } from "./menu/sdm.js";
 import { telakCommand } from "./menu/telak.js";
+import { selarasCommand } from "./menu/selaras.js";
 
 async function connectToWhatsApp() {
   const { state, saveCreds } = await useMultiFileAuthState("auth");
@@ -19,6 +20,21 @@ async function connectToWhatsApp() {
   // }
 
   const userState = new Map();
+  const userTimeouts = new Map();
+  function resetUserTimeout(sender) {
+    // Clear existing timeout if any
+    const existingTimeout = userTimeouts.get(sender);
+    if (existingTimeout) clearTimeout(existingTimeout);
+
+    // Set a new 5-minute timeout
+    const timeoutId = setTimeout(() => {
+      userState.delete(sender);
+      userTimeouts.delete(sender);
+      console.log(`User ${sender} state expired and was removed.`);
+    }, 5 * 60 * 1000); // 5 minutes in milliseconds
+
+    userTimeouts.set(sender, timeoutId);
+  }
 
   sock.ev.on("creds.update", saveCreds);
 
@@ -48,6 +64,8 @@ async function connectToWhatsApp() {
     const args = body.trim().split(" ");
     const command = args.shift().toLowerCase();
 
+    resetUserTimeout(sender);
+
     if (command === "/mulai") {
       userState.set(sender, "main");
     }
@@ -70,6 +88,9 @@ async function connectToWhatsApp() {
           break;
         case "dipa":
           await dipaCommand(command, sock, sender, userState);
+          break;
+        case "selaras":
+          await selarasCommand(command, sock, sender, userState);
           break;
       }
     }
