@@ -6,6 +6,7 @@ import { perwabkeuCommand } from "./menu/perwabkeu.js";
 import { sdmCommand } from "./menu/sdm.js";
 import { telakCommand } from "./menu/telak.js";
 import { selarasCommand } from "./menu/selaras.js";
+import { jituCommand } from "./menu/jitu.js";
 
 async function connectToWhatsApp() {
   const { state, saveCreds } = await useMultiFileAuthState("auth");
@@ -27,7 +28,10 @@ async function connectToWhatsApp() {
     if (existingTimeout) clearTimeout(existingTimeout);
 
     // Set a new 5-minute timeout
-    const timeoutId = setTimeout(() => {
+    const timeoutId = setTimeout(async () => {
+      await sock.sendMessage(sender, {
+        text: "🙏 *Terima kasih telah menggunakan bot kami!*",
+      });
       userState.delete(sender);
       userTimeouts.delete(sender);
       console.log(`User ${sender} state expired and was removed.`);
@@ -91,6 +95,9 @@ async function connectToWhatsApp() {
           break;
         case "selaras":
           await selarasCommand(command, sock, sender, userState);
+          break;
+        case "jitu":
+          await jituCommand(command, sock, sender, userState);
           break;
       }
     }

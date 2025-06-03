@@ -1,4 +1,5 @@
 import { dipaText } from "./dipa.js";
+import { jituText } from "./jitu.js";
 import { perwabkeuText } from "./perwabkeu.js";
 import { sdmText } from "./sdm.js";
 import { selarasText } from "./selaras.js";
@@ -14,6 +15,7 @@ Silakan pilih aplikasi yang ingin Anda akses:
 3️⃣  *SDM* — Sumber Daya Manusia
 4️⃣  *DIPA* — Dokumen Isian Pelaksanaan Anggaran
 5️⃣  *Selaras* — Sistem Elektronik Layanan Anggaran dan Rencana Anggaran Satuan
+6️⃣  *JITU* — Jaringan Integrasi Teknologi Utama
 
 🛑 Ketik */selesai* jika Anda sudah selesai memilih.
 
@@ -41,6 +43,10 @@ export async function mainCommand(command, sock, sender, map) {
     case "5":
       map.set(sender, "selaras");
       await sock.sendMessage(sender, { text: selarasText });
+      break;
+    case "6":
+      map.set(sender, "jitu");
+      await sock.sendMessage(sender, { text: jituText });
       break;
     case "/selesai":
       map.delete(sender);
