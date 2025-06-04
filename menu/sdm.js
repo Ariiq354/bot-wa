@@ -14,20 +14,20 @@ _Ketik angka sesuai pilihan Anda, contoh: *1* untuk melihat cara input data angg
 `;
 
 export const firstRes = `
-🧾 *Cara Memasukkan Data Anggota*
+🧾 *Menu SDM - Cara Memasukkan Data Anggota*
 
-1️⃣ Buka *Menu Anggota*
-2️⃣ Klik tombol *Tambah* untuk menambahkan anggota baru
+- Buka *Menu Anggota*
+- Klik tombol *Tambah* untuk menambahkan anggota baru
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const secondRes = `
-🏛️ *Membentuk Susunan Organisasi dan Tata Kerja (SOTK)*
+🏛️ *Menu SDM - Membentuk Susunan Organisasi dan Tata Kerja (SOTK)*
 
-1️⃣ Buka *Menu SOTK*
-2️⃣ Scroll ke bawah untuk melihat struktur
-3️⃣ Pilih anggota untuk menambah personel ke dalam SOTK
+- Buka *Menu SOTK*
+- Scroll ke bawah untuk melihat struktur
+- Pilih anggota untuk menambah personel ke dalam SOTK
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;

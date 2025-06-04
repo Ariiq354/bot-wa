@@ -16,41 +16,41 @@ _Ketik angka sesuai pilihan Anda, contoh: *1* untuk melihat IKPA Satker._
 `;
 
 export const firstRes = `
-📈 *Melihat IKPA Capaian Satker*
+📈 *Menu DIPA - Melihat IKPA Capaian Satker*
 
-1️⃣ Buka *Menu IKPA*
-2️⃣ Pilih *Sub Menu Capaian Satker*
-3️⃣ Data Penilaian IKPA Satker akan ditampilkan
+- Buka *Menu IKPA*
+- Pilih *Sub Menu Capaian Satker*
+- Data Penilaian IKPA Satker akan ditampilkan
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const secondRes = `
-💰 *Melihat Pagu Minus Belanja Realisasi*
+💰 *Menu DIPA - Melihat Pagu Minus Belanja Realisasi*
 
-1️⃣ Buka *Menu Pagu Minus*
-2️⃣ Pilih salah satu *Sub Menu Belanja*
-3️⃣ Data Satker dengan Pagu Minus akan ditampilkan
+- Buka *Menu Pagu Minus*
+- Pilih salah satu *Sub Menu Belanja*
+- Data Satker dengan Pagu Minus akan ditampilkan
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const thirdRes = `
-📊 *Melihat Realisasi Belanja*
+📊 *Menu DIPA - Melihat Realisasi Belanja*
 
-1️⃣ Buka *Menu Realisasi Belanja*
-2️⃣ Pilih *Sub Menu Realisasi*
+- Buka *Menu Realisasi Belanja*
+- Pilih *Sub Menu Realisasi*
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const fourthRes = `
-📄 *Melihat Data Kontrak*
+📄 *Menu DIPA - Melihat Data Kontrak*
 
-1️⃣ Buka *Menu Lainnya*
-2️⃣ Pilih *Sub Menu Daftar Kontrak*
-3️⃣ Gunakan filter untuk melihat data sesuai kebutuhan
-4️⃣ Data kontrak akan ditampilkan
+- Buka *Menu Lainnya*
+- Pilih *Sub Menu Daftar Kontrak*
+- Gunakan filter untuk melihat data sesuai kebutuhan
+- Data kontrak akan ditampilkan
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;

@@ -16,53 +16,53 @@ _Ketik angka sesuai pilihan Anda, contoh: *1* untuk melihat cara membuat Surat M
 `;
 
 export const firstRes = `
-📩 *Cara Membuat Surat Masuk*
+📩 *Menu Selaras - Cara Membuat Surat Masuk*
 
-1️⃣ Buka Menu *Surat Masuk*
-2️⃣ Klik *Tambah Surat Masuk*
-3️⃣ Masukkan *Nilai RAB*
-4️⃣ Upload dokumen RAB
+- Buka Menu *Surat Masuk*
+- Klik *Tambah Surat Masuk*
+- Masukkan *Nilai RAB*
+- Upload dokumen RAB
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const secondRes = `
-📤 *Cara Membuat Surat Keluar*
+📤 *Menu Selaras - Cara Membuat Surat Keluar*
 
-1️⃣ Buka *Menu Surat Keluar*
-2️⃣ Klik *Tambah Surat Keluar*
-3️⃣ Mengisi *Peruntukan Surat Keluar*
-4️⃣ Klik *Simpan*
+- Buka *Menu Surat Keluar*
+- Klik *Tambah Surat Keluar*
+- Mengisi *Peruntukan Surat Keluar*
+- Klik *Simpan*
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const thirdRes = `
-📅 *Cara Membuat Jadwal Kegiatan*
+📅 *Menu Selaras - Cara Membuat Jadwal Kegiatan*
 
-1️⃣ Buka *Menu Surat Masuk* atau *Surat Keluar*
-2️⃣ Klik *Tambah Surat Masuk* atau *Surat Keluar*
-3️⃣ Mengisi *Peruntukan Surat Masuk* atau *Surat Keluar*
-4️⃣ Klik *Buat Kegiatan*
-5️⃣ Mengisi *Kegiatan*
-6️⃣ Klik *Simpan*
+- Buka *Menu Surat Masuk* atau *Surat Keluar*
+- Klik *Tambah Surat Masuk* atau *Surat Keluar*
+- Mengisi *Peruntukan Surat Masuk* atau *Surat Keluar*
+- Klik *Buat Kegiatan*
+- Mengisi *Kegiatan*
+- Klik *Simpan*
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const fourthRes = `
-✍️ *Tanda Tangan Elektronik*
+✍️ *Menu Selaras - Tanda Tangan Elektronik*
 
-1️⃣ Buka *Menu Surat Keluar*
-2️⃣ Klik *Tambah Surat Keluar*
-3️⃣ Mengisi *Peruntukan Surat Keluar* Termasuk *Unggah Dokumen Word*
-4️⃣ Klik *Simpan*
-5️⃣ Nama Surat Yang Dituju Ada Notifikasi
-6️⃣ Masuk *Detail Surat Keluar*
-7️⃣ Klik Button *Approval/Konfirmasi TTE*
-8️⃣ Masukkan *Email dan Kata Sandi DIVTIK*
-9️⃣ Masukkan *Email dan Kata Sandi BSRE*
-🔟 *TTE Berhasil dan Dokumen TTE Sudah Siap*
+- Buka *Menu Surat Keluar*
+- Klik *Tambah Surat Keluar*
+- Mengisi *Peruntukan Surat Keluar* Termasuk *Unggah Dokumen Word*
+- Klik *Simpan*
+- Nama Surat Yang Dituju Ada Notifikasi
+- Masuk *Detail Surat Keluar*
+- Klik Button *Approval/Konfirmasi TTE*
+- Masukkan *Email dan Kata Sandi DIVTIK*
+- Masukkan *Email dan Kata Sandi BSRE*
+- *TTE Berhasil dan Dokumen TTE Sudah Siap*
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;

@@ -15,31 +15,31 @@ _Ketik angka sesuai pilihan Anda, contoh: *1* untuk melihat cara membuat RAB._
 `;
 
 export const firstRes = `
-📝 *Cara Membuat RAB*
+📝 *Menu Telak - Cara Membuat RAB*
 
-1️⃣ Masuk ke *Menu Nama Kegiatan*
-2️⃣ Isi data *Kegiatan*
-3️⃣ Masukkan *Nilai RAB*
-4️⃣ Upload dokumen RAB
-5️⃣ Klik *Simpan* untuk menyimpan data
+- Masuk ke *Menu Nama Kegiatan*
+- Isi data *Kegiatan*
+- Masukkan *Nilai RAB*
+- Upload dokumen RAB
+- Klik *Simpan* untuk menyimpan data
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const secondRes = `
-📊 *Melihat Status Kegiatan*
+📊 *Menu Telak - Melihat Status Kegiatan*
 
-1️⃣ Buka *Menu Laporan Status Kegiatan*
-2️⃣ Klik tombol *Detail* untuk melihat informasi lengkap
+- Buka *Menu Laporan Status Kegiatan*
+- Klik tombol *Detail* untuk melihat informasi lengkap
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
 
 export const thirdRes = `
-🎯 *Jenis Dukungan Operasi*
+🎯 *Menu Telak - Jenis Dukungan Operasi*
 
-1️⃣ *Dukungan Operasi POLRI*
-2️⃣ *Direktif Kapolri*
+- *Dukungan Operasi POLRI*
+- *Direktif Kapolri*
 
 ↩️ *Ketik 9 untuk kembali ke menu sebelumnya.*
 `;
